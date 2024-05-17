@@ -16,11 +16,10 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            flex-direction: column;
         }
         .button {
             display: inline-block;
-            background-color: #0070c9; /* Apple blue */
-            color: #fff;
             text-decoration: none;
             padding: 15px 30px;
             border-radius: 25px;
@@ -28,14 +27,28 @@
             border: none;
             box-shadow: 0 2px 5px rgba(0,0,0,0.3);
             transition: background-color 0.3s ease;
+            margin: 10px;
         }
-        .button:hover {
+        .button.fitness {
+            background-color: #0070c9; /* Apple blue */
+            color: #fff;
+        }
+        .button.fitness:hover {
             background-color: #005bac; /* Darker shade of blue on hover */
+        }
+        .button.nutrition {
+            background-color: #00c907; /* Green */
+            color: #fff;
+        }
+        .button.nutrition:hover {
+            background-color: #009a06; /* Darker shade of green on hover */
         }
     </style>
 </head>
 <body>
 <div class="container">
-    <a class="button" href="https://appstorevents.onelink.me/uz7A/05prqibu">Download Our App</a></div>
+    <a class="button fitness" href="https://appstorevents.onelink.me/uz7A/05prqibu">Fitness ADS</a>
+    <a class="button nutrition" href="https://appstorevents.onelink.me/uz7A/4095f9rx">Nutrition ADS</a>
+</div>
 </body>
 </html>
